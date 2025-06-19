@@ -27,4 +27,14 @@ export class AdminLoginPage{
     VerifySuccessMsg(){
         cy.contains('Welcome to the HR Management System.').should('be.visible')
     }
+
+    login(email, password) {
+        this.openUrl()
+        this.enterWorkmail(email)
+        this.enterPassword(password)
+        this.clickEyeButton()
+        this.clickLogIn()
+    }
+
+
 }

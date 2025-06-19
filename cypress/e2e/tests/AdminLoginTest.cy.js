@@ -6,11 +6,7 @@ describe('Admin Login of NybSys HRM',()=>{
 
     it('Login Flow',()=>{
 
-        loginObj.openUrl()
-        loginObj.enterWorkmail(loginData.Workemail)
-        loginObj.enterPassword(loginData.Password)
-        loginObj.clickEyeButton()
-        loginObj.clickLogIn()
+        loginObj.login(loginData.Workemail, loginData.Password)
         loginObj.VerifySuccessMsg()
 
     })
